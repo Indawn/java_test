@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class JudgeRouteCircle {
 	public boolean judgeCircle(String moves){
@@ -25,9 +26,10 @@ public class JudgeRouteCircle {
 	}
 	public static void main(String[] argv){
 		JudgeRouteCircle test = new JudgeRouteCircle();
-		//(test.judgeCircle("RL")){
-			System.out.println(test.judgeCircle("RLU"));
-		//}
-		
+		System.out.print("input: ");
+		Scanner sc=new Scanner(System.in);
+		String inchar = null;
+		inchar = sc.nextLine();
+		System.out.println(test.judgeCircle(inchar));		
 	}
 }

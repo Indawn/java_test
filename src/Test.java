@@ -166,10 +166,6 @@ public class Test {
 			        {13,14,15,16},
 			        {17,18,19,20}};
 		printnum(arr);     
-		String dirname = "/1rr";
-	    File d = new File(dirname);
-	    // 现在创建目录
-	    d.mkdirs();
 	}
 }
 /*
