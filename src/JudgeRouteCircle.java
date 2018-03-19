@@ -17,6 +17,8 @@ public class JudgeRouteCircle {
 			case 'R':
 				temp[0]--;
 				break;
+			default :
+				temp[1] = temp[0] = 2000;				
 			}
 		}
 		if(temp[0] == 0 && temp[1] == 0)
@@ -27,9 +29,10 @@ public class JudgeRouteCircle {
 	public static void main(String[] argv){
 		JudgeRouteCircle test = new JudgeRouteCircle();
 		System.out.print("input: ");
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		String inchar = null;
 		inchar = sc.nextLine();
-		System.out.println(test.judgeCircle(inchar));		
+		System.out.println(test.judgeCircle(inchar));	
+		sc.close();
 	}
 }
